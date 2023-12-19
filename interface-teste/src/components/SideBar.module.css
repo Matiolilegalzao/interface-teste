@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat:wght@300&family=Nunito:wght@500&family=Open+Sans&family=Roboto&display=swap');
+
 .sideBar {
     background-color: rgb(2, 49, 92);
     width: 3.3rem;
@@ -38,6 +40,7 @@
     transition: opacity 0.1s ease, transform 0.2s ease; /* Adiciona uma transição de opacidade e transformação */
     transition-delay: 0.1s; /* Adiciona um atraso à transição de 0.2 segundos */
     transform: translateX(-100%); /* Move o texto para a esquerda */
+    font-family: "Nunito";
 }
 
 .sideBar:hover .itemText {

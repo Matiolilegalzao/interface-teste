@@ -6,7 +6,6 @@ import SideBar from './components/SideBar';
 function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
-      <SideBar></SideBar>
       <AppRoutes></AppRoutes>
     </div>
   );
