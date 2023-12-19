@@ -4,11 +4,10 @@
     height: 100vh;
     padding-right: 1rem;
     transition: width 0.3s ease;
-    position: fixed;
-}
 
+}
 .sideBar:hover  {
-    width: 12rem;
+    width: 15rem;
 }
 .sideBarList {
     margin-top: 0;
@@ -28,16 +27,16 @@
 .sideBarListItem {
     margin-bottom: 1rem;
 }
-
 .itemText {
+    width: 15rem;
     font-size: 1.2rem;
     margin-top: 0.7rem;
     margin-left: 1rem;
     color: aliceblue;
     opacity: 0; /* Configura a opacidade inicial para 0 */
     position: absolute; /* Permite sobrepor ao ícone */
-    transition: opacity 0.2s ease, transform 0.3s ease; /* Adiciona uma transição de opacidade e transformação */
-    transition-delay: 0.2s; /* Adiciona um atraso à transição de 0.2 segundos */
+    transition: opacity 0.1s ease, transform 0.2s ease; /* Adiciona uma transição de opacidade e transformação */
+    transition-delay: 0.1s; /* Adiciona um atraso à transição de 0.2 segundos */
     transform: translateX(-100%); /* Move o texto para a esquerda */
 }
 
