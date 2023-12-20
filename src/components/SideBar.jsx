@@ -7,6 +7,7 @@ function SideBar() {
         <>
         <div className={styles.sideBar}>
         <ul className={styles.sideBarList}>
+            <div>
             <Link to="/">
                 <li className={styles.sideBarListItem}>
                     <svg xmlns="http://www.w3.org/2000/svg" height="2rem" width="2.2rem" viewBox="0 0 576 512">
@@ -15,6 +16,7 @@ function SideBar() {
                     <span className={styles.itemText}>Home</span>
                 </li>
             </Link>
+            </div>
             <Link to="/pontos-de-onibus">
                 <li className={styles.sideBarListItem}>
                <svg xmlns="http://www.w3.org/2000/svg" height="2rem" width="2.2rem" viewBox="0 0 384 512" >

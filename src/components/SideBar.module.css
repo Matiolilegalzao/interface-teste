@@ -40,7 +40,7 @@
     transition: opacity 0.1s ease, transform 0.2s ease; /* Adiciona uma transição de opacidade e transformação */
     transition-delay: 0.1s; /* Adiciona um atraso à transição de 0.2 segundos */
     transform: translateX(-100%); /* Move o texto para a esquerda */
-    font-family: "Nunito";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .sideBar:hover .itemText {
