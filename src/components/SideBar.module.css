@@ -3,7 +3,7 @@
 .sideBar {
     background-color: rgb(2, 49, 92);
     width: 4.5rem;
-    height: 100vh;
+    height: 94vh;
     padding-right: 1rem;
     transition: width 0.3s ease;
 
@@ -54,4 +54,13 @@
 
 .sideBar:hover {
     z-index: 1; /* Coloca o item em foco acima dos outros durante o hover */
+}
+@media screen and (max-width: 800px) {
+    .sideBar {
+        width: 3rem;
+    }
+    .sideBarList {
+
+    padding-left: 0.3rem;
+}
 }

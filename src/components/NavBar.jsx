@@ -21,6 +21,9 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <div>
+        <p className="registrar-se"><Link to="/registro">Registrar-se</Link></p>
+      </div>
     </nav>
   );
 };
