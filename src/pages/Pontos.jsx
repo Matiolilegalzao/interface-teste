@@ -1,18 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import styles from "../pages/Pontos.module.css"
 import SideBar from "../components/SideBar";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function PontosPage() {
-    return(
-        <>
-        <SideBar></SideBar>
-            <div className={styles.mainContent}>
-                <h1 className={styles.title}>Pontos de onibus</h1>
-            
-                <iframe src="https://www.google.com/maps/d/embed?mid=1MJMCU5IeJllafxr2EqSYt9pDDCOVwbUd&ehbc=2E312F" width="640" height="480"></iframe>
+    return (
+        <div className="container-fluid">
+            <div className="row">
+                <SideBar />
+                <div className="col">
+                    <h1>Pontos de ônibus</h1>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1MJMCU5IeJllafxr2EqSYt9pDDCOVwbUd" width="640" height="480"></iframe>
+                </div>
             </div>
-        </>
-    )
+        </div>
+    );
 }
-export default PontosPage
+
+export default PontosPage;
