@@ -6,7 +6,6 @@ import SideBar from "../components/SideBar";
 function PontosPage() {
     return(
         <>
-        <SideBar></SideBar>
             <div className={styles.mainContent}>
                 <h1 className={styles.title}>Pontos de onibus</h1>
             
