@@ -2,7 +2,7 @@
 
 .sideBar {
     background-color: rgb(2, 49, 92);
-    width: 3.3rem;
+    width: 4.5rem;
     height: 100vh;
     padding-right: 1rem;
     transition: width 0.3s ease;
@@ -40,7 +40,7 @@
     transition: opacity 0.1s ease, transform 0.2s ease; /* Adiciona uma transição de opacidade e transformação */
     transition-delay: 0.1s; /* Adiciona um atraso à transição de 0.2 segundos */
     transform: translateX(-100%); /* Move o texto para a esquerda */
-    font-family: "Nunito";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .sideBar:hover .itemText {
