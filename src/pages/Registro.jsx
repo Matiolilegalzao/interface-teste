@@ -26,7 +26,7 @@ function RegistroPage() {
     function cadastrarUsuario(e) {
         e.preventDefault()
         alert("Cadastrado com sucesso!")
-        window.location.href = "/"
+        window.location.href = "/meus-documentos"
     }
 }
 export default RegistroPage
