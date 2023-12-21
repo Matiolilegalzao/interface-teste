@@ -7,6 +7,7 @@ function RegistroPage() {
         <div className={styles.wrapper}>
         <div className={styles.leftContainer}>
             <h2>Ilha Conectada</h2>
+            <img src="public/images/ilhaconectada.png" className={styles.image}></img>
         </div>
         <div className={styles.rightContainer}>
             <form className={styles.formulario}>
