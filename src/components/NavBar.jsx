@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css'
+
 const Navbar = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: 'rgb(2, 49, 92)' }}>
+    <nav className={`navbar navbar-expand-lg ${darkMode ? 'navbar-dark' : 'navbar-light'}`} style={{ backgroundColor: 'rgb(2, 49, 92)' }}>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -18,6 +21,9 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link className="nav-link " to="/settings">Settings</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link " to="/payment">Plans</Link>
           </li>
         </ul>
       </div>
