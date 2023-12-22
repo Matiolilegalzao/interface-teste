@@ -16,6 +16,7 @@
 .pageTitle {
     text-align: center;
     font-family: "nunito";
+    font-size: 50px;
 }
 .documentWrapper {
     width: 50%;
@@ -43,7 +44,6 @@
     margin-left: 3%;
     display: inline;
 }
-
 .documentName {
     font-family: "nunito";
     font-size: 20px;
@@ -59,14 +59,27 @@
 @media screen and (max-width: 1000px) {
     .mainContent {
         width: 100%;
-        background-color: antiquewhite;
+        border: 0;
     }
 }
 @media screen and (max-width: 700px) {
-    .mainContent {
-        background-color: rgb(255, 221, 176);
-    }
     .documentWrapper {
         width: 100%;
+    }
+    .mainContent {
+        margin-top: 0;
+    }
+    .docRg {
+        width: 80%;
+    }
+    .docText {
+        font-size: 25px;
+    }
+    .documentName {
+        font-size: 30px;
+    }
+    .pageTitle {
+        margin-top: 5%;
+        font-size: 38px;
     }
 }
