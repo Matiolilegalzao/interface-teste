@@ -24,12 +24,12 @@ function RegistroPage() {
         </div>
         <div className={styles.rightContainer}>
             <form className={styles.formulario} onSubmit={handleSubmit} onSubmit={cadastrarUsuario}>
-                <h2>Registrar</h2> <h2>Parte 1</h2>
+                <h1>Registrar</h1> <h5>Passo 1 de 2</h5>
                 <label for="name" className={styles.inputLabel}>Nome completo:<input type="text" required></input></label>
                 <label for="senha" className={styles.inputLabel}>Senha:<input type="password" required></input></label>
                 <label for="email" className={styles.inputLabel}>Email:<input type="email"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required   title="Por favor, insira um endereço de e-mail válido."></input></label>
                 <label for="termos" className={styles.termosLabel}><input type="radio" required="true" className={styles.termos}></input>Eu aceito os termos e condições</label>
-                <input type="submit" value="Registrar" className={styles.signupBtn}></input>
+                <input type="submit" value="Continuar" className={styles.signupBtn}></input>
             </form>
         </div>
         </div>
