@@ -11,15 +11,15 @@
     background-color: rgb(2, 49, 92);
     color: aliceblue;
     padding: 2rem;
-    height: 30vw;
     width: 20vw;
+    min-width: 15vw;
     text-align: center;
 }
 
 .rightContainer {
     text-align: center;
     padding: 2rem;
-    height: 30vh;
+    height: fit-content;
     width: 30vw;
 }
 .inputLabel {
@@ -41,7 +41,48 @@
 
     display: inline;
 }
-
 .formulario {
     max-width: none;
+}
+.image {
+    width: 90%;
+    margin-top: 20%;
+}
+
+@media screen and (max-width: 1433px) {
+    .leftContainer {
+        width: 20rem;
+    }
+    .rightContainer {
+        width: 30rem;
+    }
+}
+@media screen and (max-width: 1192px) {
+    .leftContainer {
+        width: 15rem;
+    }
+    .rightContainer {
+        width: 25rem;
+    }
+    .image {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .leftContainer {
+        display: none;
+    }
+
+    .rightContainer {
+        width: 80vw; /* Ocupa a largura total em telas pequenas */
+        height: 80vh;
+    }
+
+    .signupBtn {
+        width: 100%; /* Ocupa a largura total em telas pequenas */
+    }
+
+    .termosContainer {
+        width: 100%; /* Ocupa a largura total em telas pequenas */
+    }
 }

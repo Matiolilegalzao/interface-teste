@@ -2,21 +2,22 @@
 
 .sideBar {
     background-color: rgb(2, 49, 92);
-    width: 4.5rem;
-    height: 94vh;
+    width: 3.3rem;
+
+    position: fixed;
     padding-right: 1rem;
     transition: width 0.3s ease;
 
 }
 .sideBar:hover  {
-    width: 15rem;
+    width: 16rem;
 }
 .sideBarList {
     margin-top: 0;
     padding-top: 1rem;
     list-style: none;
     width: fit-content;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
 }
 .logoutBtn {
     bottom: 0;
@@ -58,6 +59,9 @@
 @media screen and (max-width: 800px) {
     .sideBar {
         width: 3rem;
+    }
+    .itemText {
+        display: none;
     }
     .sideBarList {
 
