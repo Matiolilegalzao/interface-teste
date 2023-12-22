@@ -4,9 +4,9 @@ import SideBar from '../components/SideBar';
 const Home = () => {
   return (
     <>
+    
       <div>
-        <h1>Home Page</h1>
-        <p>Welcome to the home page!</p>
+        <h1>Bem vindo!</h1>
       </div>
     </>
   );

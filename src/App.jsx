@@ -2,12 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/NavBar.jsx';
 import Sidebar from './components/SideBar.jsx';  // Substitua 'Sidebar' pelo nome real do seu componente
-import Home from './pages/Home';
-import Profile from './pages/Profile';
-import Settings from './pages/Settings';
-import PontosPage from './pages/Pontos';
+
+
+
+import PontosPage from './pages/Pontos'; import RegistroPage from './pages/Registro.jsx'; import Settings from './pages/Settings'; import Profile from './pages/Profile'; import Home from './pages/Home';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = () => {
   return (
@@ -21,10 +22,12 @@ const App = () => {
             <Route path="/profile" element={<Profile />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/pontos-de-onibus" element={<PontosPage />} />
+            <Route path="/registro" element={<RegistroPage />} />
           </Routes>
         </div>
       </div>
     </Router>
+    
   );
 };
 

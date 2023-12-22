@@ -5,6 +5,30 @@
     
 }
 .mainContent {
+    text-align: center;
     margin: 1rem auto;
-    width: fit-content;
+    width: 50vw;
+    height: 60vh;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .mainContent {
+        text-align: center;
+        margin: 1rem auto;
+        width: 70vw;
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 600px) {
+    .mainContent {
+        text-align: center;
+        margin: 1rem auto;
+        width: 100vw;
+        height: 60vh;
+    }
 }

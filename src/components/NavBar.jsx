@@ -25,9 +25,9 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <button onClick={() => setDarkMode(!darkMode)}>
-        {darkMode ? <FaSun /> : <FaMoon />}
-      </button>
+      <div>
+        <p className="registrar-se"><Link to="/registro">Registrar-se</Link></p>
+      </div>
     </nav>
   );
 };

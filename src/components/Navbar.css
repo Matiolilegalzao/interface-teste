@@ -13,7 +13,8 @@
   color: #f2f2f2;
   text-align: center;
   text-decoration: none;
-  padding: 1rem 0;
+  padding: 1rem;
+  margin-right: 1rem;
   transition: color 0.15s; /* Adicione uma transição suave para a mudança de cor */
   font-weight: 500;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -21,5 +22,10 @@
 
 .navbar a:hover {
   background-color: #ddd;
-  color: #001b91; /* Cor mais escura para o estado de hover */
+  color: rgb(2, 49, 92); /* Cor mais escura para o estado de hover */
+}
+.registrar-se {
+  color: aliceblue;
+  margin: 0 1vw;
+  vertical-align: middle;
 }
