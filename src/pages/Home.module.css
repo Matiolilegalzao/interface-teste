@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat:wght@300&family=Nunito:wght@500&family=Open+Sans&family=Roboto&display=swap');
+
+.pageTitle {
+    text-align: center;
+}
+.contentWrapper {
+    text-align: center;
+    margin: 1em auto;
+    width: 50rem;
+    font-family: 'nunito';
+}
+.horario {
+    font-size: 25px;
+}
+.tabelaPontos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+      background-color: #f2f2f2;
+}
