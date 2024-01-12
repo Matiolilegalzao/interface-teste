@@ -38,7 +38,7 @@ function RegistroPage() {
     function cadastrarUsuario(e) {
         e.preventDefault()
         alert("Cadastrado com sucesso!")
-        window.location.href = "/meus-documentos"
+        window.location.href = "/registro-2"
     }
 }
 

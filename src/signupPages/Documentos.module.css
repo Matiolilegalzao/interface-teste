@@ -2,15 +2,17 @@
 
 .wrapper {
     margin: 1rem auto;
-    
 }
 .mainContent {
-    width: 80vw;
+    width: 100%;
     text-align: center;
     padding-top: 3%;
     border-radius: 15px;
     display: inline-block;
 
+}
+form {
+    min-width: 90%;
 }
 .pageTitle {
     text-align: center;
@@ -18,21 +20,17 @@
     font-size: 40px;
 }
 .documentWrapper {
-    width: 32%;
+    width: 33%;
     height: fit-content;
     display: inline-block;
     text-align: center;
 }
 .docRg {
     margin: auto;
-    width: 70%;
+    width: 80%;
     display: block;
 }
-.docText {
-    font-family: "nunito";
-    display: inline;
-    font-size: 30px;
-}
+
 .uploadButton {
     padding: 5px;
     border-radius: 12px;
@@ -44,32 +42,34 @@
 }
 .documentName {
     font-family: "nunito";
-    font-size: 20px;
+    font-size: 29px;
     margin-bottom: 0;
     margin-top: 5%;
 }
 
 @media screen and (max-width: 1650px) {
     .mainContent {
-        width: 100vw;
+        width: 100%;
+    }
+    input {
+        max-width: 80%;
     }
     .documentName {
     font-family: "nunito";
-    font-size: 35px;
+    font-size: 1.5rem;
     margin-bottom: 0;
     margin-top: 5%;
 }
     .documentWrapper {
-        width: 70%;
-    }
-    .uploadButton {
-        margin-left: 5%;
+        min-width: 35rem;
+        margin: 0 2rem;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .documentWrapper {
-        width: 100%;
+        width: 70%;
+        height: fit-content;
     }
     .mainContent {
         margin-top: 0;
@@ -81,10 +81,31 @@
         font-size: 25px;
     }
     .documentName {
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .pageTitle {
+        margin-top: 2%;
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .documentWrapper {
+        width: 90%;
+    }
+    .mainContent {
+        margin-top: 0;
+    }
+    .docRg {
+        width: 80%;
+    }
+    .docText {
+        font-size: 25px;
+    }
+    .documentName {
+        font-size: 25px;
     }
     .pageTitle {
         margin-top: 5%;
-        font-size: 38px;
+        font-size: 35px;
     }
 }

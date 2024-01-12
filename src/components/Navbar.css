@@ -4,7 +4,6 @@
   overflow: hidden;
   padding: 0;
   min-height: fit-content;
-
 }
 
 .navbar a {
@@ -17,7 +16,7 @@
   margin-right: 1rem;
   transition: color 0.15s; /* Adicione uma transição suave para a mudança de cor */
   font-weight: 500;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'nunito';
 }
 
 .navbar a:hover {
