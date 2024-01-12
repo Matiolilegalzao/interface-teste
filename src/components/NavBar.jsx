@@ -28,7 +28,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div>
-        <p className="registrar-se"><Link to="/registro">Registrar-se</Link></p>
+        <p className="registrar-se"><Link to="/registro-1">Registrar-se</Link></p>
       </div>
     </nav>
   );
