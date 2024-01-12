@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat:wght@300&family=Nunito:wght@500&family=Open+Sans&family=Roboto&display=swap');
+
+.sideBar {
+    background-color: rgb(2, 49, 92);
+    width: 3.3rem;
+    height: 100vh;
+    position: fixed;
+    padding-right: 1rem;
+    transition: width 0.3s ease;
+
+}
+.sideBar:hover  {
+    width: 16rem;
+}
+.sideBarList {
+    margin-top: 0;
+    padding-top: 1rem;
+    list-style: none;
+    width: fit-content;
+    padding-left: 0.5rem;
+}
+.logoutBtn {
+    bottom: 0;
+    padding-bottom: 1rem;
+    position: absolute;
+    margin-top: 0;
+    width: fit-content;
+}
+
+.sideBarListItem {
+    margin-bottom: 1rem;
+}
+.itemText {
+    width: 15rem;
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+    color: aliceblue;
+    opacity: 0; /* Configura a opacidade inicial para 0 */
+    position: absolute; /* Permite sobrepor ao ícone */
+    transition: opacity 0.1s ease, transform 0.2s ease; /* Adiciona uma transição de opacidade e transformação */
+    transition-delay: 0.1s; /* Adiciona um atraso à transição de 0.2 segundos */
+    transform: translateX(-100%); /* Move o texto para a esquerda */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sideBar:hover .itemText {
+    opacity: 1; /* Torna o texto visível ao passar o mouse */
+    transform: translateX(0); /* Restaura a posição do texto para ao lado do ícone */
+}
+
+.sideBar {
+    position: relative; /* Necessário para o posicionamento absoluto */
+}
+
+.sideBar:hover {
+    z-index: 1; /* Coloca o item em foco acima dos outros durante o hover */
+}
+@media screen and (max-width: 800px) {
+    .sideBar {
+        width: 3rem;
+    }
+    .itemText {
+        display: none;
+    }
+    .sideBarList {
+
+    padding-left: 0.3rem;
+}
+}
