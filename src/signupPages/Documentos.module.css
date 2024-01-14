@@ -1,41 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat:wght@300&family=Nunito:wght@500&family=Open+Sans&family=Roboto&display=swap');
 
 .wrapper {
-    margin: auto;
-    margin-top: 2%;
+    margin: 1rem auto;
 }
 .mainContent {
-
-    width: 50vw;
-    margin: 5% auto;
-    padding-top: 5%;
-    height: fit-content;
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
     border-radius: 15px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Deslocamento x, deslocamento y, desfoque, cor da sombra */
+    display: inline-block;
+
+}
+form {
+    min-width: 90%;
 }
 .pageTitle {
     text-align: center;
     font-family: "nunito";
-    font-size: 45px;
+    font-size: 40px;
 }
 .documentWrapper {
-    width: 50%;
+    width: 33%;
     height: fit-content;
-    margin-bottom: 5%;
     display: inline-block;
     text-align: center;
 }
 .docRg {
     margin: auto;
-    margin-bottom: 3%;
-    width: 60%;
+    width: 80%;
     display: block;
 }
-.docText {
-    font-family: "nunito";
-    display: inline;
-    font-size: 25px;
-}
+
 .uploadButton {
     padding: 5px;
     border-radius: 12px;
@@ -43,28 +38,38 @@
     border-bottom: 4px solid black;
     margin-left: 3%;
     display: inline;
+    min-width: 3rem;
 }
 .documentName {
     font-family: "nunito";
-    font-size: 20px;
+    font-size: 29px;
     margin-bottom: 0;
     margin-top: 5%;
 }
 
 @media screen and (max-width: 1650px) {
     .mainContent {
-        width: 80%;
-    }
-}
-@media screen and (max-width: 1000px) {
-    .mainContent {
         width: 100%;
-        border: 0;
     }
+    input {
+        max-width: 80%;
+    }
+    .documentName {
+    font-family: "nunito";
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 5%;
 }
-@media screen and (max-width: 700px) {
     .documentWrapper {
-        width: 100%;
+        min-width: 35rem;
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .documentWrapper {
+        width: 70%;
+        height: fit-content;
     }
     .mainContent {
         margin-top: 0;
@@ -76,10 +81,31 @@
         font-size: 25px;
     }
     .documentName {
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .pageTitle {
+        margin-top: 2%;
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .documentWrapper {
+        width: 90%;
+    }
+    .mainContent {
+        margin-top: 0;
+    }
+    .docRg {
+        width: 80%;
+    }
+    .docText {
+        font-size: 25px;
+    }
+    .documentName {
+        font-size: 25px;
     }
     .pageTitle {
         margin-top: 5%;
-        font-size: 38px;
+        font-size: 35px;
     }
 }

@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat:wght@300&family=Nunito:wght@500&family=Open+Sans&family=Roboto&display=swap');
 
-
-
 .sideBar {
     background-color: rgb(2, 49, 92);
     width: 3.3rem;
-    min-height: 100vh; /* Alterado para 100vh para ocupar 100% da altura da tela */
+    height: 100vh;
+    position: fixed;
     padding-right: 1rem;
     transition: width 0.3s ease;
-    font-family: 'nunito';
-}
 
+}
 .sideBar:hover  {
-    width: 275px;
+    width: 16rem;
 }
 .sideBarList {
     margin-top: 0;
@@ -33,7 +31,7 @@
     margin-bottom: 1rem;
 }
 .itemText {
-    min-width: 15rem;
+    width: 15rem;
     font-size: 1.2rem;
     margin-top: 0.7rem;
     margin-left: 1rem;
@@ -43,7 +41,7 @@
     transition: opacity 0.1s ease, transform 0.2s ease; /* Adiciona uma transição de opacidade e transformação */
     transition-delay: 0.1s; /* Adiciona um atraso à transição de 0.2 segundos */
     transform: translateX(-100%); /* Move o texto para a esquerda */
-    font-family: 'nunito', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .sideBar:hover .itemText {
@@ -58,24 +56,8 @@
 .sideBar:hover {
     z-index: 1; /* Coloca o item em foco acima dos outros durante o hover */
 }
-@media screen and (max-width: 1200px) {
-    .sideBar {
-        width: 3rem;
-    }
-    .sideBar:hover {
-        width: 600px;
-    }
-    .sideBarList {
-
-    padding-left: 0.3rem;
-}
-}
 @media screen and (max-width: 800px) {
     .sideBar {
-        width: 3rem;
-        transition: none;
-    }
-    .sideBar:hover {
         width: 3rem;
     }
     .itemText {

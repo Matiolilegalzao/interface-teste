@@ -1,14 +1,15 @@
+.container {
 
-
-.title {    
-    text-align: center;
-    
-}
-.mainContent {
-    text-align: center;
     margin: 1rem auto;
+    align-items: center; /* Isso centraliza os elementos horizontalmente */
+}
+
+.mainContent {
+    display: block;
+    margin: 1rem auto; /* Isso centraliza o elemento horizontalmente */
     width: 50vw;
     height: 60vh;
+    text-align: center; /* Isso centraliza o texto dentro do mainContent */
 }
 
 .map {
@@ -18,15 +19,14 @@
 
 @media screen and (max-width: 1200px) {
     .mainContent {
-        text-align: center;
         margin: 1rem auto;
         width: 70vw;
         height: 60vh;
     }
 }
+
 @media screen and (max-width: 600px) {
     .mainContent {
-        text-align: center;
         margin: 1rem auto;
         width: 100vw;
         height: 60vh;
