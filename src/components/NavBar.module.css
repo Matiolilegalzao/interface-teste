@@ -8,19 +8,25 @@
 
 .ulContainer {
     margin: auto;
-    max-width: 600px;
+    max-width: 650px;
 }
-
+.weather {
+    background-color: aliceblue;
+    width: fit-content;
+}
 nav {
     background-color: rgb(2, 49, 92);
     color: aliceblue;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5);
     min-width: fit-content;
+    float: left;
 }
 
 .navItem {
     padding-top: 2.1rem;
     padding-left: 20px;
     padding-right: 20px;
+    min-width: fit-content;
     font-family: 'nunito';
     font-weight: bold;
     color: aliceblue;
@@ -40,7 +46,7 @@ nav {
 
 .ilhaLogo {
     height: 100px;
-    padding: 10px 0;
+    padding: 10px 30px;
     display: flex; /* Adicionado */
     align-items: center; /* Adicionado */
     justify-content: center; /* Adicionado */
