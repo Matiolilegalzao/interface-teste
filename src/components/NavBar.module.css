@@ -1,0 +1,47 @@
+.navbarUl {
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    font-family: 'nunito';
+}
+
+.ulContainer {
+    margin: auto;
+    max-width: 600px;
+}
+
+nav {
+    background-color: rgb(2, 49, 92);
+    color: aliceblue;
+    min-width: fit-content;
+}
+
+.navItem {
+    padding-top: 2.1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'nunito';
+    font-weight: bold;
+    color: aliceblue;
+    vertical-align: middle;
+}
+
+.navItem:hover {
+    background-color: aliceblue;
+    color: rgb(2, 49, 92);
+}
+
+.registerBtn {
+    display: inline;
+    background-color: yellow;
+    width: fit-content;
+}
+
+.ilhaLogo {
+    height: 100px;
+    padding: 10px 0;
+    display: flex; /* Adicionado */
+    align-items: center; /* Adicionado */
+    justify-content: center; /* Adicionado */
+}

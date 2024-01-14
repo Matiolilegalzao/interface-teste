@@ -1,35 +1,29 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Navbar.css'
-
+import styles from "../components/NavBar.module.css"
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
   return (
-    <nav className={`navbar navbar-expand-lg ${darkMode ? 'navbar-dark' : 'navbar-light'}`} style={{ backgroundColor: 'rgb(2, 49, 92)' }}>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
-          <li>
-            <Link className="nav-link" to="/">Home</Link>
+    <nav>
+      <div className={styles.ulContainer}>
+        <ul className={styles.navbarUl}>
+          <li className={styles.navItem}>
+            <Link className="nav-link " to="/">Página inicial</Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link " to="/Profile">Profile</Link>
+          <li className={styles.navItem}>
+            <Link className="nav-link " to="/Profile">Meu perfil</Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link " to="/settings">Settings</Link>
+          <img src='src\images\ilha conectada (2).png' className={styles.ilhaLogo}></img>
+          <li className={styles.navItem}>
+            <Link className="nav-link " to="/settings">Registrar-se</Link>
           </li>
-          <li className="nav-item">
+          <li className={styles.navItem}>
             <Link className="nav-link " to="/payment">Plans</Link>
           </li>
+
         </ul>
       </div>
-      <div>
-        <p className="registrar-se"><Link to="/registro-1">Registrar-se</Link></p>
-      </div>
+
     </nav>
   );
 };
