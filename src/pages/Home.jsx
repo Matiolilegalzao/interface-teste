@@ -1,12 +1,14 @@
 import React from 'react';
-import SideBar from '../components/SideBar';
+import styles from './Home.module.css'
 
 const Home = () => {
   return (
     <>
     
-      <div>
-        <h1>Bem vindo!</h1>
+      <div className={styles.wrapper}>
+        <h2 className={styles.pageTitle}>Bem vindo!</h2>
+        <div className={styles.mainContent}>
+          </div>
       </div>
     </>
   );
