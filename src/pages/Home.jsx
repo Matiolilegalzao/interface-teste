@@ -13,17 +13,17 @@ const Home = () => {
 
       let saudacao = "";
       if (minutes > 9) {
-        if (hours < 12) {
+        if (hours < 12 && hours > 6) {
           saudacao = `Agora são ${hours}:${minutes}, bom dia!`;
-        } else if (hours < 18) {
+        } else if (hours < 18 && hours > 12) {
           saudacao = `Agora são ${hours}:${minutes}, boa tarde!`;
         } else {
           saudacao = `Agora são ${hours}:${minutes}, boa noite!`;
         }
       } else {
-        if (hours < 12) {
+        if (hours < 12 && hours > 6) {
           saudacao = `Agora são ${hours}:0${minutes}, bom dia!`;
-        } else if (hours < 18) {
+        } else if (hours < 18 && hours > 12) {
           saudacao = `Agora são ${hours}:0${minutes}, boa tarde!`;
         } else {
           saudacao = `Agora são ${hours}:0${minutes}, boa noite!`;
