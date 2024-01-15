@@ -17,7 +17,7 @@ form {
 .pageTitle {
     text-align: center;
     font-family: "nunito";
-    font-size: 40px;
+    font-size: 35px;
 }
 .documentWrapper {
     width: 33%;
@@ -27,7 +27,7 @@ form {
 }
 .docRg {
     margin: auto;
-    width: 80%;
+    width: 60%;
     display: block;
 }
 

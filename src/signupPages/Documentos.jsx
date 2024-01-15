@@ -5,7 +5,7 @@ function DocumentosPage(){
     return(
         <>
             <div className={styles.wrapper}>
-                <h2 className={styles.pageTitle}>Meus documentos</h2>
+                <h2 className={styles.pageTitle}>Documentos e dados</h2>
                 <form action="/upload" method="post" enctype="multipart/form-data">
                 <div className={styles.mainContent}>
                     <div className={styles.documentWrapper}>

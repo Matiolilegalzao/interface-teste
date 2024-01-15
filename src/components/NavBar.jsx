@@ -37,14 +37,14 @@ const Navbar = () => {
             <Link className="nav-link " to="/">Página inicial</Link>
           </li>
           <li className={styles.navItem}>
-            <Link className="nav-link " to="/Profile">Meu perfil</Link>
+            <Link className="nav-link " to="/meus-documentos">Documentos</Link>
           </li>
           <img src='src\images\ilha conectada (2).png' className={styles.ilhaLogo}></img>
           <li className={styles.navItem}>
-            <Link className="nav-link " to="/settings">Registrar-se</Link>
+            <Link className="nav-link " to="/registro-1">Registrar-se</Link>
           </li>
           <li className={styles.navItem}>
-            <Link className="nav-link " to="/payment">Plans</Link>
+            <Link className="nav-link " to="/payment">Planos</Link>
           </li>
 
         </ul>
