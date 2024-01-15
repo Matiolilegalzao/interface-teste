@@ -8,8 +8,6 @@
     position: fixed;
     padding-right: 1rem;
     transition: width 0.3s ease;
-
-
 }
 .sideBar:hover  {
     width: 16rem;
@@ -61,6 +59,7 @@
 @media screen and (max-width: 800px) {
     .sideBar {
         width: 3rem;
+        display: none;
     }
     .itemText {
         display: none;

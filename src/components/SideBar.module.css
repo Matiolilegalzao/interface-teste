@@ -24,7 +24,7 @@
 .logoutBtn {
     bottom: 0;
     padding-bottom: 1rem;
-    position: absolute;
+    position: fixed;
     margin-top: 0;
     width: fit-content;
 }
