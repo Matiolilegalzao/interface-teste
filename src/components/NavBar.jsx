@@ -51,4 +51,4 @@ const Navbar = () => {
   );
 };
 
-export default NavbarComponent;
+export default Navbar;
