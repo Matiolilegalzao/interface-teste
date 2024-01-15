@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "../components/NavBar.module.css"
 
-const NavbarComponent = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
 
@@ -51,4 +51,4 @@ const NavbarComponent = () => {
   );
 };
 
-export default NavbarComponent;
+export default Navbar;
