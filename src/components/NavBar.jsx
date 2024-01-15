@@ -1,7 +1,9 @@
+// Navbar.js
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Navbar.css'
+import './Navbar.css';
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -13,7 +15,7 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <li>
+          <li className="nav-item">
             <Link className="nav-link" to="/">Home</Link>
           </li>
           <li className="nav-item">
@@ -25,10 +27,10 @@ const Navbar = () => {
           <li className="nav-item">
             <Link className="nav-link " to="/payment">Plans</Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link registrar-se" to="/registro-1">Registrar-se</Link>
+          </li>
         </ul>
-      </div>
-      <div>
-        <p className="registrar-se"><Link to="/registro-1">Registrar-se</Link></p>
       </div>
     </nav>
   );
