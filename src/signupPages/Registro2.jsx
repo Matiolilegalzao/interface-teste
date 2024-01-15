@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from "./Registro2.module.css"
 
 function AdditionalInfoPage() {
   const [address, setAddress] = useState('');
@@ -16,40 +17,43 @@ function AdditionalInfoPage() {
 
   return (
     <div className="container">
-      <h2 className="my-3">Informações Adicionais</h2>
       <form>
-        <div className="mb-3">
-          <label className="form-label">Endereço:</label>
-          <input type="text" className="form-control" value={address} onChange={(e) => setAddress(e.target.value)} />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">CPF:</label>
-          <input type="text" className="form-control" value={cpf} onChange={(e) => setCpf(e.target.value)} />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">RG:</label>
-          <input type="text" className="form-control" value={rg} onChange={(e) => setRg(e.target.value)} />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Ano de Nascimento:</label>
-          <input type="text" className="form-control" value={birthYear} onChange={(e) => setBirthYear(e.target.value)} />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Nome da Instituição:</label>
-          <input type="text" className="form-control" value={collegeName} onChange={(e) => setCollegeName(e.target.value)} />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Semestre:</label>
-          <input type="text" className="form-control" value={semester} onChange={(e) => setSemester(e.target.value)} />
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Atestado de Matrícula:</label>
-          <input type="file" className="form-control" onChange={handleFileUpload} />
-        </div>
-        <button type="submit" className="btn btn-primary">Enviar</button>
+      <h2 className="my-3">Cadastro</h2>
+      
+      <p>Passo 2 de 2</p>
+      
+        <label for="endereço" className={styles.labelStyle}>Endereço:<input type='text' className={styles.textInput} id='endereço'></input></label>
+
+        <label for="cpf">CPF:<input type='text' className={styles.textInput} id='cpf'></input></label>
+
+
+        <label for="rg">RG:<input type='text' className={styles.textInput} id='rg'></input></label>
+
+        <label for="instituicao">Nome da Instituição de ensino:<input type='text' className={styles.textInput} id='instituicao'></input></label>
+
+        <label for="ano-de-nascimento" >Ano de nascimento:<input type='date' id='ano-de-nascimento' className={styles.anoNascimento}></input></label>
+        <label for="semestre" className={styles.semestre}>Semestre:
+          <select id='semestre' name='semestre' className={styles.selectSemestre}>
+            <option value="1° semestre">1° Semestre</option>
+            <option value="2° semestre">2° Semestre</option>
+            <option value="3° semestre">3° Semestre</option>
+            <option value="4° semestre">4° Semestre</option>
+            <option value="5° semestre">5° Semestre</option>
+            <option value="6° semestre">6° Semestre</option>
+            <option value="7° semestre">7° Semestre</option>
+            <option value="8° semestre">8° Semestre</option>
+            <option value="7° semestre">9° Semestre</option>
+            <option value="8° semestre">10° Semestre</option>
+          </select>
+        </label>
+        <input type="submit" value="Continuar"className={styles.registerBtn}></input>
       </form>
     </div>
   );
 }
-
+    function cadastrarUsuario(e) {
+        e.preventDefault()
+        alert("Cadastrado com sucesso!")
+        window.location.href = "/meus-documentos"
+    }
 export default AdditionalInfoPage;
