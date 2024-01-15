@@ -8,7 +8,6 @@ import DocumentosPage from './signupPages/Documentos.jsx'; import AdditionalInfo
 import PontosPage from './pages/Pontos'; import RegistroPage from './signupPages/Registro.jsx'; import Settings from './pages/Settings'; import Profile from './pages/Profile'; import Home from './pages/Home';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AdditionalInfoPage from './pages/Registro2.jsx';
 import PaymentOpt from './pages/paymentOptions.jsx';
 
 const App = () => {

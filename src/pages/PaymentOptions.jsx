@@ -26,7 +26,10 @@ const PaymentOpt = () => {
             </div>
             <h1>Selecione Seu Método de Pagamento</h1>
             <div>
-                <button onClick={() => handlePaymentSelection('pix')}>Pix</button>
+                <button onClick={() => handlePaymentSelection('pix')}>
+                    Pix
+                    <img src="src\images\pix.png" alt="Pix" />
+                </button>
                 <button onClick={() => handlePaymentSelection('credito')}>Cartão de Crédito</button>
                 <button onClick={() => handlePaymentSelection('debito')}>Cartão de Débito</button>
             </div>
