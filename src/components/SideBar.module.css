@@ -74,6 +74,7 @@
     .sideBar {
         width: 3rem;
         transition: none;
+        display: none;
     }
     .sideBar:hover {
         width: 3rem;

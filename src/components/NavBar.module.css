@@ -3,6 +3,7 @@
     list-style: none;
     display: flex;
     margin: 0;
+    padding: 0;
     font-family: 'nunito';
 }
 
@@ -50,4 +51,17 @@ nav {
     display: flex; /* Adicionado */
     align-items: center; /* Adicionado */
     justify-content: center; /* Adicionado */
+}
+
+@media screen and (max-width: 800px) {
+    .navbarUl {
+        width: 100%;
+    }
+    .ilhaLogo {
+        padding: 10px 0px;
+    }
+    .navItem {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 }

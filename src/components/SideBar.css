@@ -61,6 +61,7 @@
 @media screen and (max-width: 800px) {
     .sideBar {
         width: 3rem;
+        display: none;
     }
     .itemText {
         display: none;
