@@ -4,6 +4,7 @@
     display: flex;
     margin: 0;
     font-family: 'nunito';
+    transition: all 0.5s ease;
 }
 
 .ulContainer {
@@ -45,9 +46,20 @@ nav {
 }
 
 .ilhaLogo {
-    height: 100px;
+    height: auto;
+    max-width: 100px;
     padding: 10px 30px;
     display: flex; /* Adicionado */
     align-items: center; /* Adicionado */
     justify-content: center; /* Adicionado */
+}
+
+@media screen and (max-width: 600px) {
+    .navbarUl {
+      flex-direction: column;
+    }
+  }
+
+.openMenu {
+    /* Seus estilos para o menu aberto vão aqui */
 }
