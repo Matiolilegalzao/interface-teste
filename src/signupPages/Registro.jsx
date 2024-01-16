@@ -12,7 +12,7 @@ function RegistroPage() {
         // Aqui você pode adicionar a lógica para registrar o usuário
 
         // Depois de registrar o usuário, redirecione para a página de confirmação de e-mail
-        navigate('/confirmar-email');
+        navigate('/registro-2');
     };
 
     return(

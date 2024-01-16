@@ -39,7 +39,7 @@ const Navbar = () => {
             </li>
             {!isMobile && <img src='src\images\ilha conectada (2).png' className={styles.ilhaLogo}></img>}
             <li className={styles.navItem}>
-              <Link className="nav-link " to="/settings">Registrar-se</Link>
+              <Link className="nav-link " to="/registro-1">Registrar-se</Link>
             </li>
             <li className={styles.navItem}>
               <Link className="nav-link " to="/payment">Plans</Link>

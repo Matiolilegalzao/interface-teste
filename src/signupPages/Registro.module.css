@@ -50,6 +50,10 @@
     width: 90%;
     margin-top: 20%;
 }
+.termosLabel {
+    display: inline;
+    float: left;
+}
 
 @media screen and (max-width: 1433px) {
     .leftContainer {
