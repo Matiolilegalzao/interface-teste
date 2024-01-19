@@ -48,7 +48,7 @@ const Navbar = () => {
                 <Link className="nav-link " to="/pontos-de-onibus">Pontos</Link>
               </li>
               <li className={styles.navItem}>
-              <Link className="nav-link " to="/settings">Registrar-se</Link>
+              <Link className="nav-link " to="/registro-1">Registrar-se</Link>
             </li>
             </ul>
         </div>
