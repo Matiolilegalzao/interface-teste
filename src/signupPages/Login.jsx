@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./Registro.module.css"
+import styles from "./Login.module.css"
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 
-function RegistroPage() {
+function LoginPage() {
     const navigate = useNavigate();
 
 
@@ -24,16 +24,14 @@ function RegistroPage() {
         </div>
         <div className={styles.rightContainer}>
             <form className={styles.formulario} onSubmit={handleSubmit}>
-                <h1>Registrar</h1> <h5>Passo 1 de 2</h5>
-                <label for="name" className={styles.inputLabel}>Nome completo:<input type="text" required></input></label>
+                <h1>Entrar</h1>
+                <label for="name" className={styles.inputLabel}>Email:<input type="text" required></input></label>
                 <label for="senha" className={styles.inputLabel}>Senha:<input type="password" required></input></label>
-                <label for="email" className={styles.inputLabel}>Email:<input type="email"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required   title="Por favor, insira um endereço de e-mail válido."></input></label>
-                <label for="termos" className={styles.termosLabel}><input type="radio" required="true" className={styles.termos}></input>Eu aceito os termos e condições</label>
-                
+
 
                 <input type="submit" value="Continuar" className={styles.signupBtn}></input>
             </form>
-            <div className={styles.loginLabel}>Já possui conta? <Link to="/login"> Fazer login</Link></div>
+            <div className={styles.loginLabel}>Não possui conta? <Link to="/registro-1"> Cadastrar-se</Link></div>
         </div>
         </div>
         </>
@@ -45,4 +43,4 @@ function RegistroPage() {
     }
 }
 
-export default RegistroPage;
+export default LoginPage;

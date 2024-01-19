@@ -7,6 +7,7 @@ import DocumentosPage from './signupPages/Documentos.jsx';
 import PontosPage from './pages/Pontos';
 import RegistroPage from './signupPages/Registro.jsx';
 import Settings from './pages/Settings';
+import LoginPage from './signupPages/Login.jsx';
 import Profile from './pages/Profile';
 import Home from './pages/Home';
 import './App.css';
