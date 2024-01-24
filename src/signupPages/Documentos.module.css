@@ -46,6 +46,13 @@ form {
     margin-bottom: 0;
     margin-top: 5%;
 }
+.selectLabel {
+    font-size: 22px;
+    font-family: 'nunito';
+}
+.selectInput{
+    max-width: fit-content;
+}
 .labelDado {
     margin-top: 1rem;
     font-size: 25px;
