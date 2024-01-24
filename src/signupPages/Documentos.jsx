@@ -25,6 +25,16 @@ function DocumentosPage(){
                     </div>  
                 </div>
                 </form>
+                <section className={styles.dadosSection}>
+                    <h1>Dados do usuário</h1>
+                    
+                    <p className={styles.labelDado}>Nome:</p>
+                    <p className={styles.labelDado}>CPF:</p>
+                    <p className={styles.labelDado}>Endereço:</p>
+                    <p className={styles.labelDado}>Instituição:</p>
+                    <p className={styles.labelDado}>Cidade:</p>
+                    <p className={styles.labelDado}>Tipo sanguíneo:</p>
+                </section>
             </div>
         </>
     )
