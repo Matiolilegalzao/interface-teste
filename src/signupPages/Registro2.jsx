@@ -66,14 +66,25 @@ function AdditionalInfoPage() {
       
       <p>Passo 2 de 2</p>
       
-        <label for="endereço" className={styles.labelStyle}>Endereço:<input type='text' className={styles.textInput} id='endereço'></input></label>
+        <label for="endereço" className={styles.labelStyle}>Endereço:<input type='text' required className={styles.textInput} id='endereço'></input></label>
 
-        <label for="cpf">CPF:<input type='text' className={styles.textInput} id='cpf' value={cpf} onChange={handleCpfChange} style={{backgroundColor: cpfIsValid ? 'white' : 'rgb(252, 83, 83)'}}></input></label>
+        <label for="cpf">CPF:<input type='text' className={styles.textInput} id='cpf' required value={cpf} onChange={handleCpfChange} style={{backgroundColor: cpfIsValid ? 'white' : 'rgb(252, 83, 83)'}}></input></label>
 
-        <label for="rg">RG:<input type='text' className={styles.textInput} id='rg'></input></label>
+        <label for="rg">RG:<input type='text' required className={styles.textInput} id='rg'></input></label>
 
-        <label for="instituicao">Nome da Instituição de ensino:<input type='text' className={styles.textInput} id='instituicao'></input></label>
+        <label for="rg">Cidade:<input type='text' required className={styles.textInput} id='cidade'></input></label>
 
+        <label for="instituicao">Nome da Instituição de ensino:<input type='text' required className={styles.textInput} id='instituicao'></input></label>
+          <select id='tiposanguineo' name='tiposanguineo' className={styles.selectSemestre}>
+            <option value="AB+">AB+</option>
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <option value="O+">O+</option>
+            <option value="AB-">AB-</option>
+            <option value="A-">A-</option>
+            <option value="B-">B-</option>
+            <option value="O-">O-</option>
+          </select>
         <label for="ano-de-nascimento" >Ano de nascimento:<input type='date' id='ano-de-nascimento' className={styles.anoNascimento}></input></label>
         <label for="semestre" className={styles.semestre}>Semestre:
           <select id='semestre' name='semestre' className={styles.selectSemestre}>
