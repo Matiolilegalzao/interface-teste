@@ -18,7 +18,7 @@ const Temp = () => {
         const data = await response.json();
 
         // Atualiza o estado da temperatura
-        setTemperatura(`${data.main.temp}°C`);
+        setTemperatura(`${parseInt(data.main.temp)}°C`);
       } catch (error) {
         console.error('Erro ao obter dados:', error);
       }
