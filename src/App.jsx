@@ -15,6 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AdditionalInfoPage from './signupPages/Registro2.jsx';
 import PaymentOpt from './pages/paymentOptions.jsx';
 import { Helmet } from 'react-helmet';
+import Temp from './components/Temp.jsx';
 
 const App = () => {
   return ( 
@@ -23,9 +24,11 @@ const App = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
+
         <Navbar></Navbar>
         <div style={{ display: 'flex', flexDirection: 'row' }}>
           <Sidebar />
+          <Temp></Temp>
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/profile" element={<Profile />} />
